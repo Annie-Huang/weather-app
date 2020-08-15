@@ -1,6 +1,7 @@
 
 
 https://github.com/public-apis/public-apis#weather
+https://create-react-app.dev/docs/getting-started/
 
 =================================================================
 
@@ -8,3 +9,4 @@ C:\tmp>npx create-react-app weather-app --template typescript
 C:\tmp\weather-app>git remote add origin git@github.com:Annie-Huang/weather-app.git
 C:\tmp\weather-app>git push -u origin master
 
+C:\tmp\weather-app>npm install
