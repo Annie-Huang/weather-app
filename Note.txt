@@ -1,7 +1,11 @@
 
-
 https://github.com/public-apis/public-apis#weather
+
+https://medium.com/@leizl.samano/how-to-make-a-weather-app-using-react-403c88252deb
 https://create-react-app.dev/docs/getting-started/
+https://github.com/Jonathan0wh/WeatherWidget
+https://fontawesome.com/icons?d=gallery&q=weather
+https://cdnjs.com/libraries/font-awesome
 
 =================================================================
 
@@ -10,3 +14,9 @@ C:\tmp\weather-app>git remote add origin git@github.com:Annie-Huang/weather-app.
 C:\tmp\weather-app>git push -u origin master
 
 C:\tmp\weather-app>npm install
+C:\tmp\weather-app>npm install axios
+
+
+https://weatherstack.com/quickstart
+https://weatherstack.com/documentation
+3991d15de06b2d18f4db7af6d99fe1fa
