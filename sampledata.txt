@@ -1,0 +1,44 @@
+data: Array(1)
+0:
+app_temp: 12.3
+aqi: 55
+city_name: "Melbourne"
+clouds: 2
+country_code: "AU"
+datetime: "2020-08-15:11"
+dewpt: 10.7
+dhi: 0
+dni: 0
+elev_angle: -38.9
+ghi: 0
+h_angle: -90
+lat: -37.814
+lon: 144.96332
+ob_time: "2020-08-15 11:10"
+pod: "n"
+precip: 0
+pres: 1014.1
+rh: 90
+slp: 1014.8
+snow: 0
+solar_rad: 0
+state_code: "07"
+station: "E5657"
+sunrise: "21:03"
+sunset: "07:45"
+temp: 12.2
+timezone: "Australia/Melbourne"
+ts: 1597489800
+uv: 0
+vis: 5
+
+weather:
+code: "800"
+description: "Clear sky"
+icon: "c01n"
+
+__proto__: Object
+wind_cdir: "SSE"
+wind_cdir_full: "south-southeast"
+wind_dir: 149
+wind_spd: 2.1
