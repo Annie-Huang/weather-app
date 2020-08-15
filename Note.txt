@@ -7,6 +7,15 @@ https://github.com/Jonathan0wh/WeatherWidget
 https://fontawesome.com/icons?d=gallery&q=weather
 https://cdnjs.com/libraries/font-awesome
 
+
+https://www.weatherbit.io/api       <<< Got links for API Metadata (stations, cities, weather icons)
+https://www.weatherbit.io/api/weather-current
+https://www.weatherbit.io/api/swaggerui/weather-api-v2#/Current32Weather32Data
+https://www.weatherbit.io/api/weather-forecast-16-day
+https://www.weatherbit.io/api/swaggerui/weather-api-v2#/1632day324732daily32Forecast
+https://www.weatherbit.io/api/codes
+https://www.weatherbit.io/api/meta
+
 =================================================================
 
 C:\tmp>npx create-react-app weather-app --template typescript
