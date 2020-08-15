@@ -1,0 +1,10 @@
+
+
+https://github.com/public-apis/public-apis#weather
+
+=================================================================
+
+C:\tmp>npx create-react-app weather-app --template typescript
+C:\tmp\weather-app>git remote add origin git@github.com:Annie-Huang/weather-app.git
+C:\tmp\weather-app>git push -u origin master
+
