@@ -15,7 +15,7 @@ import {dayWeather} from '../model/weather.model';
 
 const DailyForcast = (day: dayWeather) => (
   <div className='card text-center'>
-    <h5 style={{marginBottom: 0}}>Wednesday</h5>
+    <h5 style={{marginBottom: 0}}>{day.day_of_week}</h5>
     <img src={day.weather_icon} alt={day.weather_description} />
     {day.min_temperature}&#176; {day.max_temperature}&#176;<br/>
     Clouds: {day.clouds}

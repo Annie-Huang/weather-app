@@ -5,7 +5,7 @@ import {dayWeather} from './model/weather.model';
 import DailyForcast from './components/DailyForcast';
 
 
-const forcastDivStyle = {
+const forecastDivStyle = {
   display: "grid",
   gridTemplateColumns: "repeat(auto-fit, 10rem)",
   gap: "10px",
@@ -24,7 +24,7 @@ function App() {
       {/*<div>{JSON.stringify(days)}</div>*/}
       {/*<hr/>*/}
 
-      <div style={forcastDivStyle}>
+      <div style={forecastDivStyle}>
         {days.map((day: dayWeather, index: number) => <DailyForcast key={index} {...day}/>)}
       </div>
 

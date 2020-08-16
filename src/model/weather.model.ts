@@ -9,6 +9,7 @@ export interface dayWeatherAPIResponse {
   wind_spd: number;
   wind_cdir: string;
   temp: number;
+  datetime: string
   min_temp: number;
   max_temp: number;
   weather: weather;
@@ -24,6 +25,7 @@ export interface dayWeather {
   weather_description: string;  // weather.description    e.g. "description": "Broken clouds"             <<< description: Text weather description
 
   // use for forecast days.
+  day_of_week: string;         // datetime               e.g. "datetime": "2020-08-16",                   <<< datetime: Current cycle hour (YYYY-MM-DD:HH).
   min_temperature: number       // min_temp               e.g. "min_temp": 8.8,                           <<< min_temp: Minimum Temperature (default Celcius)
   max_temperature: number       // max_temp               e.g. "max_temp": 14.4,                          <<< max_temp: Maximum Temperature (default Celcius)
 
