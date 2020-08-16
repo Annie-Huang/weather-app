@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import useFetchWeather from "./useFetchWeather";
 import {dayWeather} from './model/weather.model';
-import DailyForcast from './components/DailyForcast';
+import DailyForecast from './components/DailyForecast';
 import CurrentWeather from './components/CurrentWeather';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
     <div className='container' style={{maxWidth: '950px'}}>
       <CurrentWeather {...days[0]} city={city} units={units}/>
       <div className='forecast-wrapper'>
-        {days.map((day: dayWeather, index: number) => <DailyForcast key={index} {...day}/>)}
+        {days.map((day: dayWeather, index: number) => <DailyForecast key={index} {...day}/>)}
       </div>
     </div>
   );

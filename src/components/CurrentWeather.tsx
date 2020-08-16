@@ -17,7 +17,7 @@ const CurrentWeather = (today: any) => {
       </div>
       <section className='left-column'>
         <img src={today.weather_icon} alt={today.weather_description} />
-        <div className='hero'>{today.temperature} &#176;{unit}</div>
+        <div className='hero'>{today.temperature} <span className='text-secondary'>&#176;{unit}</span></div>
       </section>
       <section className='right-column text-center text-sm-left'>
         <div><span className='text-secondary'>Precipitation:</span> {today.precipitation}</div>
