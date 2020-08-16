@@ -19,7 +19,7 @@ https://www.weatherbit.io/api/meta
 
 https://stackoverflow.com/questions/48240449/type-is-not-assignable-to-type-intrinsicattributes-intrinsicclassattribu/57312722
 https://github.com/Microsoft/TypeScript/issues/15463
-
+https://en.wikipedia.org/wiki/Degree_symbol#:~:text=100%2F21%C2%B0.-,Encoding,HTML%20%E2%84%89%20).
 =================================================================
 
 C:\tmp>npx create-react-app weather-app --template typescript
@@ -28,7 +28,7 @@ C:\tmp\weather-app>git push -u origin master
 
 C:\tmp\weather-app>npm install
 C:\tmp\weather-app>npm install axios
-
+C:\tmp\weather-app>npm i bootstrap@next
 
 https://weatherstack.com/quickstart
 https://weatherstack.com/documentation
