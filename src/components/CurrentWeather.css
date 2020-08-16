@@ -1,0 +1,44 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    'summary summary'
+    'left-column right-column';
+  margin-bottom: 40px;
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.left-column {
+  /*border: 1px solid pink;*/
+
+  grid-area: left-column;
+  display: flex;
+  align-items: center;
+}
+
+.right-column {
+  /*border: 1px solid pink;*/
+
+  grid-area: right-column;
+  font-size: large;
+}
+
+.hero {
+  font-size: 50px;
+}
+
+
+@media screen and (max-width: 530px){
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'summary'
+    'left-column'
+    'right-column';
+    justify-items: center;
+    margin-bottom: 0;
+  }
+}

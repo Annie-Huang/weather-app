@@ -18,6 +18,8 @@ https://www.weatherbit.io/api/meta
 
 https://v5.getbootstrap.com/
 https://v5.getbootstrap.com/docs/5.0/components/card/
+https://v5.getbootstrap.com/docs/5.0/utilities/text/
+
 
 https://stackoverflow.com/questions/48240449/type-is-not-assignable-to-type-intrinsicattributes-intrinsicclassattribu/57312722
 https://github.com/Microsoft/TypeScript/issues/15463
@@ -58,3 +60,5 @@ Todo list:
 - Prettier
 - Lint
 - Readme
+
+- check comment out stuff in each file and clean up (especially those in css file)

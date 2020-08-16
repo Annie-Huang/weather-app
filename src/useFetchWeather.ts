@@ -1,6 +1,7 @@
 import {useEffect, useReducer} from "react";
 import axios from 'axios';
 import {convertAPIResponseToDayWeatherList} from './untils/weather.utils';
+import {dayWeather} from './model/weather.model';
 
 const DAILY_FORCAST_WEATHER_ULR = 'http://api.weatherbit.io/v2.0/forecast/daily';
 const API_KEY = '4719aae402f54021afa974832544daf9';
@@ -13,7 +14,18 @@ const ACTIONS = {
   ERROR: 'error',
 }
 
-function reducer(state:any, action:any) {
+interface state {
+  loading: boolean;
+  days: dayWeather[];
+  error?: any;
+}
+
+interface action {
+  type: string,
+  payload?: any
+}
+
+function reducer(state: state, action: action): state {
   switch (action.type) {
     case ACTIONS.MAKE_REQUEST:
       return {loading: true, days: []}
@@ -28,7 +40,7 @@ function reducer(state:any, action:any) {
 
 
 export default function useFetchWeather(city: string, units: string) {
-  const [state, dispatch] = useReducer(reducer, {loading: true, days: []});
+  const [state, dispatch] = useReducer(reducer, {loading: true, days: [], error: null});
 
   useEffect(() => {
     dispatch({type: ACTIONS.MAKE_REQUEST})

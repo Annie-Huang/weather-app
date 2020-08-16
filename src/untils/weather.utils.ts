@@ -1,6 +1,6 @@
 import {dayWeather, dayWeatherAPIResponse} from '../model/weather.model';
+import {WEEKDAY} from '../constant/weather.constant';
 
-const WEEKDAY = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const convertDateStrToDay = (dateStr: string): string => WEEKDAY[new Date(dateStr).getDay()];
 
