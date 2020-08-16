@@ -16,10 +16,14 @@ https://www.weatherbit.io/api/swaggerui/weather-api-v2#/1632day324732daily32Fore
 https://www.weatherbit.io/api/codes
 https://www.weatherbit.io/api/meta
 
+https://v5.getbootstrap.com/
+https://v5.getbootstrap.com/docs/5.0/components/card/
 
 https://stackoverflow.com/questions/48240449/type-is-not-assignable-to-type-intrinsicattributes-intrinsicclassattribu/57312722
 https://github.com/Microsoft/TypeScript/issues/15463
 https://en.wikipedia.org/wiki/Degree_symbol#:~:text=100%2F21%C2%B0.-,Encoding,HTML%20%E2%84%89%20).
+
+
 =================================================================
 
 C:\tmp>npx create-react-app weather-app --template typescript
@@ -29,6 +33,8 @@ C:\tmp\weather-app>git push -u origin master
 C:\tmp\weather-app>npm install
 C:\tmp\weather-app>npm install axios
 C:\tmp\weather-app>npm i bootstrap@next
+C:\tmp\weather-app>npm install --save styled-components     << uninstall later.
+
 
 https://weatherstack.com/quickstart
 https://weatherstack.com/documentation
