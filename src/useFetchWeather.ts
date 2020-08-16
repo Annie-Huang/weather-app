@@ -2,7 +2,6 @@ import {useEffect, useReducer} from "react";
 import axios from 'axios';
 import {convertAPIResponseToDayWeatherList} from './untils/weather.utils';
 
-const CURRENT_WEATHER_ULR = 'http://api.weatherbit.io/v2.0/current';
 const DAILY_FORCAST_WEATHER_ULR = 'http://api.weatherbit.io/v2.0/forecast/daily';
 const API_KEY = '4719aae402f54021afa974832544daf9';
 const COUNTRY = "AU";
@@ -12,18 +11,16 @@ const ACTIONS = {
   MAKE_REQUEST: 'make-request',
   GET_DATA: 'get-data',
   ERROR: 'error',
-  UPDATE_HAS_NEXT_PAGE: 'update-has-next-page'
 }
 
 function reducer(state:any, action:any) {
-  // e.g. if you have dispatch({type: 'hello', payload: {x:3}})
-  // then action.payload.x is 3.
-
   switch (action.type) {
     case ACTIONS.MAKE_REQUEST:
       return {loading: true, days: []}
     case ACTIONS.GET_DATA:
-      return {...state, loading: false, days: action.payload.days}
+      return {...state, loading: false, days: action.payload.days, error: null}
+    case ACTIONS.ERROR:
+      return {...state, loading: false, days: [], error: action.payload.error}
     default:
       return state;
   }
