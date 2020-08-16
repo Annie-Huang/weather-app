@@ -1,0 +1,6 @@
+.forecast-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 120px);
+  gap: 10px;
+  justify-content: center;
+}

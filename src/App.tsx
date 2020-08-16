@@ -4,31 +4,20 @@ import useFetchWeather from "./useFetchWeather";
 import {dayWeather} from './model/weather.model';
 import DailyForcast from './components/DailyForcast';
 
-
-const forecastDivStyle = {
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, 10rem)",
-  gap: "10px",
-  justifyContent: "center",
-}
-
 function App() {
-
-  const {loading, days} = useFetchWeather('melbourne', "M");
+  const city = 'melbourne';
+  const units = 'M';
+  const {loading, days} = useFetchWeather(city, units);
 
   console.log('loading=', loading);
   console.log('days=', days);
 
   return (
-    <>
-      {/*<div>{JSON.stringify(days)}</div>*/}
-      {/*<hr/>*/}
-
-      <div style={forecastDivStyle}>
+    <div className='container'>
+      <div className='forecast-wrapper'>
         {days.map((day: dayWeather, index: number) => <DailyForcast key={index} {...day}/>)}
       </div>
-
-    </>
+    </div>
   );
 }
 
