@@ -16,6 +16,10 @@ https://www.weatherbit.io/api/swaggerui/weather-api-v2#/1632day324732daily32Fore
 https://www.weatherbit.io/api/codes
 https://www.weatherbit.io/api/meta
 
+
+https://stackoverflow.com/questions/48240449/type-is-not-assignable-to-type-intrinsicattributes-intrinsicclassattribu/57312722
+https://github.com/Microsoft/TypeScript/issues/15463
+
 =================================================================
 
 C:\tmp>npx create-react-app weather-app --template typescript
@@ -29,3 +33,22 @@ C:\tmp\weather-app>npm install axios
 https://weatherstack.com/quickstart
 https://weatherstack.com/documentation
 3991d15de06b2d18f4db7af6d99fe1fa
+
+
+Todo list:
+===========
+- Boostrap 5 for layout.
+- Error for API call
+- Search city is not available.
+- Loading stage.
+- Grid for mobile and tablet view
+- Accessibility
+- switch between Imperial/Metric units
+- enter in a location name to look up
+
+
+- Unit test.
+- Coverage test.
+- Prettier
+- Lint
+- Readme
