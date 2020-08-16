@@ -4,14 +4,14 @@ import useFetchWeather from "./useFetchWeather";
 
 function App() {
 
-  const {jobs, today} = useFetchWeather('melbourne');
+  const {loading, days} = useFetchWeather('melbourne', "M");
 
-  console.log('jobs=', jobs);
-  console.log('today=', today);
+  console.log('loading=', loading);
+  console.log('days=', days);
 
   return (
     <>
-      <div>{JSON.stringify(today)}</div>
+      <div>{JSON.stringify(days)}</div>
       <hr/>
 
     </>
