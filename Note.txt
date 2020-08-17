@@ -25,6 +25,7 @@ https://stackoverflow.com/questions/48240449/type-is-not-assignable-to-type-intr
 https://github.com/Microsoft/TypeScript/issues/15463
 https://en.wikipedia.org/wiki/Degree_symbol#:~:text=100%2F21%C2%B0.-,Encoding,HTML%20%E2%84%89%20).
 https://stackoverflow.com/questions/5619202/converting-a-string-to-a-date-in-javascript
+https://stackoverflow.com/questions/43064221/typescript-ts7006-parameter-xxx-implicitly-has-an-any-type
 
 =================================================================
 
@@ -41,6 +42,9 @@ C:\tmp\weather-app>npm install --save styled-components     << uninstall later.
 https://weatherstack.com/quickstart
 https://weatherstack.com/documentation
 3991d15de06b2d18f4db7af6d99fe1fa
+
+This app is to mirro the idea of useFetchJobs in C:\react\github-jobs-api-react-app
+
 
 
 Todo list:
@@ -62,3 +66,5 @@ Todo list:
 - Readme
 
 - check comment out stuff in each file and clean up (especially those in css file)
+- see if you can use enum;
+- use boostrap breakpoints for mobile screen

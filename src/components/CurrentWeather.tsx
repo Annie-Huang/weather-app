@@ -4,7 +4,6 @@ import {WEATHER_UNIT_MAPPER} from '../constant/weather.constant';
 import {getCalendarMonth, getWeekDay} from '../untils/weather.utils';
 
 const CurrentWeather = (today: any) => {
-  // @ts-ignore
   const unit = WEATHER_UNIT_MAPPER[today.units].shortName;
   const dateOfToday = new Date();
 

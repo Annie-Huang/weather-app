@@ -1,4 +1,5 @@
 Project information:
+- This is a weather website that show the current weather and the future 7 days forecast.
 - Project is created with create-react-app
 
 Command:
