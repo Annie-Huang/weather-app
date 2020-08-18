@@ -1,40 +1,34 @@
-import React, {ChangeEvent, useState} from 'react';
+import React, {useState} from 'react';
 import './SearchWeather.css';
 
-const SearchWeather = ({city, setCity}) => {
-  const [searchCity, setSearchCity] = useState(city);
+const SearchWeather = ({city, setCity, units, setUnits}) => {
+  const [searchedCity, setSearchedCity] = useState(city);
+  const [searchedUnits, setSearchedUnits] = useState(units);
 
   const handleSubmitData = () => {
-    console.log('annieannie, searchCity=', searchCity);
-    setCity(searchCity);
+    setCity(searchedCity);
+    setUnits(searchedUnits);
   }
 
   return (
     <form className='my-3'>
       <label htmlFor="city" className="form-label">Search Weather for your city</label>
-      <input type="text" className="form-control" id="city" name="city" value={searchCity} onChange={(e) => setSearchCity(e.target.value)}/>
-      city: {city}
-      <br />
+      <input type="text" className="form-control" id="city" name="city" aria-label="search city" value={searchedCity} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchedCity(e.target.value)}/>
 
-      Search city: {searchCity}
-      <br />
+      <div className="form-check mt-2">
+        <input className="form-check-input" type="radio" name="weatherUnit" id="Celsius" onChange={() => setSearchedUnits('M')} checked={searchedUnits === 'M'}/>
+          <label className="form-check-label" htmlFor="Celsius">
+            Celsius
+          </label>
+      </div>
+      <div className="form-check mb-2">
+        <input className="form-check-input" type="radio" name="weatherUnit" id="Fahrenheit" onChange={() => setSearchedUnits('I')} checked={searchedUnits === 'I'}/>
+          <label className="form-check-label" htmlFor="Fahrenheit">
+            Fahrenheit
+          </label>
+      </div>
 
-      {/*<div className="form-check mt-2">*/}
-      {/*  <input className="form-check-input" type="radio" name="weatherUnit" id="Celsius" checked/>*/}
-      {/*    <label className="form-check-label" htmlFor="Celsius">*/}
-      {/*      Celsius*/}
-      {/*    </label>*/}
-      {/*</div>*/}
-      {/*<div className="form-check mb-2">*/}
-      {/*  <input className="form-check-input" type="radio" name="weatherUnit" id="Fahrenheit" />*/}
-      {/*    <label className="form-check-label" htmlFor="Fahrenheit">*/}
-      {/*      Fahrenheit*/}
-      {/*    </label>*/}
-      {/*</div>*/}
-
-      {/*<button type="submit" className="btn btn-primary" onClick={handleSubmitData}>Search</button>*/}
-      {/*<button className="btn btn-primary" onClick={handleSubmitData}>Search</button>*/}
-      <button className="btn btn-primary" onClick={() => setCity(searchCity)}>Search</button>
+      <button type='button' className="btn btn-primary" onClick={handleSubmitData}>Search</button>
     </form>
   );
 };
