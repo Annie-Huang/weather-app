@@ -1,7 +1,7 @@
 import {useEffect, useReducer} from "react";
 import axios from 'axios';
 import {convertAPIResponseToDayWeatherList} from './untils/weather.utils';
-import {dayWeather} from './model/weather.model';
+import {IDayWeather} from './model/weather.model';
 
 const DAILY_FORCAST_WEATHER_ULR = 'http://api.weatherbit.io/v2.0/forecast/daily';
 const API_KEY = '4719aae402f54021afa974832544daf9';
@@ -16,7 +16,7 @@ const ACTIONS = {
 
 interface state {
   loading: boolean;
-  days: dayWeather[];
+  days: IDayWeather[];
   error?: any;
 }
 

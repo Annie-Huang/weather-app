@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import useFetchWeather from "./useFetchWeather";
-import {dayWeather} from './model/weather.model';
+import {IDayWeather} from './model/weather.model';
 import DailyForecast from './components/DailyForecast';
 import CurrentWeather from './components/CurrentWeather';
 import SearchWeather from './components/SearchWeather';
@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <SearchWeather city={city} setCity={setCity} units={units} setUnits={setUnits}/>
       <CurrentWeather {...days[0]} city={city} units={units}/>
       <div className='forecast-wrapper'>
-        {days.map((day: dayWeather, index: number) => <DailyForecast key={index} {...day}/>)}
+        {days.map((day: IDayWeather, index: number) => <DailyForecast key={index} {...day}/>)}
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
-export interface weather {
+export interface IWeather {
   icon: string;           // e.g. "c03d",
   description: string;    // e.g. "Broken clouds"
 }
 
-export interface dayWeatherAPIResponse {
+export interface IDayWeatherAPIResponse {
   pop: number;
   rh: number;
   wind_spd: number;
@@ -12,11 +12,11 @@ export interface dayWeatherAPIResponse {
   datetime: string;
   min_temp: number;
   max_temp: number;
-  weather: weather;
+  weather: IWeather;
   clouds: number;
 }
 
-export interface dayWeather {
+export interface IDayWeather {
   // use for current day.
   precipitation: string;        // pop                    e.g. "pop": 50,                                 <<< pop: Probability of Precipitation (%)
   humidity: string;             // rh                     e.g. "rh": 79,                                  <<< rh: Average relative humidity (%)

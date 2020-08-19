@@ -1,4 +1,4 @@
-import {dayWeather, dayWeatherAPIResponse} from '../model/weather.model';
+import {IDayWeather, IDayWeatherAPIResponse} from '../model/weather.model';
 import {MONTH, WEEKDAY} from '../constant/weather.constant';
 
 export const getWeekDay = (date: Date): string => WEEKDAY[date.getDay()];
@@ -6,7 +6,7 @@ export const getCalendarMonth = (date: Date): string => MONTH[date.getMonth()];
 
 const convertDateStrToWeekDay = (dateStr: string): string => getWeekDay(new Date(dateStr));
 
-export const convertAPIResponseToDayWeatherList = (apiResponses: dayWeatherAPIResponse[]): dayWeather[] => {
+export const convertAPIResponseToDayWeatherList = (apiResponses: IDayWeatherAPIResponse[]): IDayWeather[] => {
   const daysWeather = apiResponses.map(resp => ({
     precipitation: `${resp.pop}%`,
     humidity: `${resp.rh}%`,
