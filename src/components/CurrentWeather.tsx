@@ -3,28 +3,42 @@ import './CurrentWeather.css';
 import {WEATHER_UNIT_MAPPER} from '../constant/weather.constant';
 import {getCalendarMonth, getWeekDay} from '../untils/weather.utils';
 
-const CurrentWeather = (today: any) => {
-  const unit = WEATHER_UNIT_MAPPER[today.units].shortName;
+
+interface ICurrentWeatherProp {
+  precipitation: string,
+  humidity: string,
+  wind: string,
+  temperature: number,
+  weather_description: string,
+  weather_icon: string,
+  clouds: string,
+
+  city: string,
+  units: string,
+}
+
+const CurrentWeather: React.FC<ICurrentWeatherProp> = (props) => {
+  const unit = WEATHER_UNIT_MAPPER[props.units].shortName;
   const dateOfToday = new Date();
 
   return (
     <div className='wrapper'>
       <div className='summary text-center text-sm-left'>
-        <h1 className="text-capitalize">{today.city}</h1>
+        <h1 className="text-capitalize">{props.city}</h1>
         <div className="font-weight-bold text-secondary">
           {getWeekDay(dateOfToday)}, {getCalendarMonth(dateOfToday)} {dateOfToday.getDate()} <br/>
-          {today.weather_description}
+          {props.weather_description}
         </div>
       </div>
       <section className='left-column'>
-        <img src={today.weather_icon} alt={today.weather_description} />
-        <div className='hero'>{today.temperature} <span className='text-secondary'>&#176;{unit}</span></div>
+        <img src={props.weather_icon} alt={props.weather_description} />
+        <div className='hero'>{props.temperature} <span className='text-secondary'>&#176;{unit}</span></div>
       </section>
       <section className='right-column text-center text-sm-left'>
-        <div><span className='text-secondary'>Precipitation:</span> {today.precipitation}</div>
-        <div><span className='text-secondary'>Humidity:</span> {today.humidity}</div>
-        <div><span className='text-secondary'>Wind:</span> {today.wind}</div>
-        <div><span className='text-secondary'>Clouds:</span> {today.clouds}</div>
+        <div><span className='text-secondary'>Precipitation:</span> {props.precipitation}</div>
+        <div><span className='text-secondary'>Humidity:</span> {props.humidity}</div>
+        <div><span className='text-secondary'>Wind:</span> {props.wind}</div>
+        <div><span className='text-secondary'>Clouds:</span> {props.clouds}</div>
       </section>
     </div>
     );

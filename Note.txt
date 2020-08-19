@@ -26,7 +26,9 @@ https://github.com/Microsoft/TypeScript/issues/15463
 https://en.wikipedia.org/wiki/Degree_symbol#:~:text=100%2F21%C2%B0.-,Encoding,HTML%20%E2%84%89%20).
 https://stackoverflow.com/questions/5619202/converting-a-string-to-a-date-in-javascript
 https://stackoverflow.com/questions/43064221/typescript-ts7006-parameter-xxx-implicitly-has-an-any-type
-
+https://stackoverflow.com/questions/56352702/is-there-a-way-to-both-destructure-a-function-parameter-and-keep-a-named-refere
+https://www.tutorialsteacher.com/typescript/typescript-interface
+https://fettblog.eu/typescript-react/components/
 =================================================================
 
 C:\tmp>npx create-react-app weather-app --template typescript
@@ -43,7 +45,7 @@ https://weatherstack.com/quickstart
 https://weatherstack.com/documentation
 3991d15de06b2d18f4db7af6d99fe1fa
 
-This app is to mirro the idea of useFetchJobs in C:\react\github-jobs-api-react-app
+This app is to mirror the idea of useFetchJobs in C:\react\github-jobs-api-react-app
 
 
 

@@ -1,7 +1,14 @@
 import React, {useState} from 'react';
 import './SearchWeather.css';
 
-const SearchWeather = ({city, setCity, units, setUnits}) => {
+interface ISearchWeatherProp {
+  city: string;
+  setCity: (searchedCity: string)=> void;
+  units: string;
+  setUnits: (searchedUnits: string)=> void;
+}
+
+const SearchWeather: React.FC<ISearchWeatherProp> = ({city, setCity, units, setUnits}) => {
   const [searchedCity, setSearchedCity] = useState(city);
   const [searchedUnits, setSearchedUnits] = useState(units);
 
