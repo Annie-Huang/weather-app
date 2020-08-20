@@ -1,6 +1,6 @@
 import React from 'react';
 import './CurrentWeather.css';
-import {WEATHER_UNIT_MAPPER} from '../constant/weather.constant';
+import {WEATHER_UNIT_SHORT_NAME_MAPPER} from '../constant/weather.constant';
 import {getCalendarMonth, getWeekDay} from '../untils/weather.utils';
 
 
@@ -18,7 +18,7 @@ interface ICurrentWeatherProp {
 }
 
 const CurrentWeather: React.FC<ICurrentWeatherProp> = (props) => {
-  const unit = WEATHER_UNIT_MAPPER[props.units].shortName;
+  const unit = WEATHER_UNIT_SHORT_NAME_MAPPER.get(props.units);
   const dateOfToday = new Date();
 
   return (

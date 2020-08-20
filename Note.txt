@@ -20,6 +20,7 @@ https://v5.getbootstrap.com/
 https://v5.getbootstrap.com/docs/5.0/components/card/
 https://v5.getbootstrap.com/docs/5.0/utilities/text/
 
+https://howtodoinjava.com/typescript/maps/
 
 https://stackoverflow.com/questions/48240449/type-is-not-assignable-to-type-intrinsicattributes-intrinsicclassattribu/57312722
 https://github.com/Microsoft/TypeScript/issues/15463
