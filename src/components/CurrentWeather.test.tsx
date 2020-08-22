@@ -1,5 +1,6 @@
 import React from 'react';
 import CurrentWeather, {ICurrentWeatherProp} from './CurrentWeather';
+// @ts-ignore
 import { shallow } from 'enzyme';
 
 test('CurrentWeather', () => {

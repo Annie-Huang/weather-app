@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentWeather 1`] = `
+<div
+  className="card text-center"
+>
+  <h5
+    style={
+      Object {
+        "marginBottom": 0,
+      }
+    }
+  >
+    day_of_weekStr
+  </h5>
+  <img
+    alt="weather_descriptionStr"
+    src="weather_iconStr"
+  />
+  <div>
+    10
+    °
+    <span
+      className="text-secondary"
+    >
+      20
+      °
+    </span>
+  </div>
+  <div
+    className="text-secondary"
+  >
+    Clouds: 
+    cloudsStr
+  </div>
+</div>
+`;

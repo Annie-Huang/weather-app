@@ -12,7 +12,7 @@ import React from 'react';
     {day.clouds} |
   </div>*/
 
-interface IDailyForecastProp {
+export interface IDailyForecastProp {
   weather_description: string;
   day_of_week: string;
   min_temperature: number;
