@@ -43,6 +43,16 @@ Accessibility
 https://www.w3.org/WAI/tutorials/forms/labels/
 https://www.w3.org/WAI/tutorials/forms/grouping/
 https://www.washington.edu/accessibility/checklist/images/
+
+Testing library:
+https://testing-library.com/docs/dom-testing-library/api-queries#textmatch
+https://testing-library.com/docs/react-testing-library/api#render-result
+
+Jest:
+https://jestjs.io/docs/en/snapshot-testing
+
+Enzyme:
+https://stackoverflow.com/questions/54419342/jest-enzyme-shallowwrapper-is-empty-when-creating-snapshot
 =================================================================
 
 C:\tmp>npx create-react-app weather-app --template typescript
@@ -54,18 +64,27 @@ C:\tmp\weather-app>npm install axios
 C:\tmp\weather-app>npm i bootstrap@next
 C:\tmp\weather-app>npm install --save styled-components     << uninstall later.
 
+C:\tmp\weather-app>npm install enzyme --save-dev
+C:\tmp\weather-app>npm install enzyme-adapter-react-16 --save-dev
+C:\tmp\weather-app>npm install enzyme-to-json --save-dev
+C:\tmp\weather-app>npm install react-test-renderer --save-dev        << uninstall later.
 
-https://weatherstack.com/quickstart
-https://weatherstack.com/documentation
-3991d15de06b2d18f4db7af6d99fe1fa
 
-This app is to mirror the idea of useFetchJobs in C:\react\github-jobs-api-react-app
+This app is to mirror:
+- C:\react\github-jobs-api-react-app (for useFetchJobs)
+- C:\react\react-conway-game-of-life (for unit test)
+
+
+Testing library:
+  // const { getByText } = render(<CurrentWeather {...props} />);
+  // const { asFragment  } = render(<CurrentWeather {...props} />);
+  // const firstRender = asFragment();
+  // expect(firstRender).toMatchSnapshot(asFragment());
 
 
 
 Todo list:
 ===========
-- Accessibility
 - Unit test.
 - Coverage test.
 - Prettier
@@ -76,6 +95,7 @@ Todo list:
 
 Done:
 ===============
+- Accessibility
 - Error for API call            << resulting error throw in api
 - Search city is not available. << resulting error throw in api
 - Boostrap 5 for layout.
