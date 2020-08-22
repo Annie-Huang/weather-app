@@ -8,10 +8,10 @@ const API_KEY = '4719aae402f54021afa974832544daf9';
 const COUNTRY = "AU";
 const FORECAST_DAYS = 7;
 
-const ACTIONS = {
-  MAKE_REQUEST: 'make-request',
-  GET_DATA: 'get-data',
-  ERROR: 'error',
+enum ACTIONS {
+  MAKE_REQUEST = 'make-request',
+  GET_DATA = 'get-data',
+  ERROR = 'error',
 }
 
 interface state {

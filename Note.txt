@@ -22,7 +22,9 @@ https://v5.getbootstrap.com/docs/5.0/utilities/text/
 https://v5.getbootstrap.com/docs/5.0/layout/breakpoints/
 https://v5.getbootstrap.com/docs/5.0/utilities/flex/
 
+Typescript definition:
 https://howtodoinjava.com/typescript/maps/
+https://www.typescriptlang.org/docs/handbook/enums.html
 
 https://stackoverflow.com/questions/48240449/type-is-not-assignable-to-type-intrinsicattributes-intrinsicclassattribu/57312722
 https://github.com/Microsoft/TypeScript/issues/15463
@@ -33,6 +35,7 @@ https://stackoverflow.com/questions/56352702/is-there-a-way-to-both-destructure-
 https://www.tutorialsteacher.com/typescript/typescript-interface
 https://fettblog.eu/typescript-react/components/
 
+Axio cancel:
 https://github.com/axios/axios#cancellation
 https://medium.com/@anuhosad/debouncing-events-with-react-b8c405c33273
 =================================================================
