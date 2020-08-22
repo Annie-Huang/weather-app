@@ -5,10 +5,11 @@ import {IDayWeather} from './model/weather.model';
 import DailyForecast from './components/DailyForecast';
 import CurrentWeather from './components/CurrentWeather';
 import SearchWeather from './components/SearchWeather';
+import {WEATHER_UNIT_NAME_MAPPER} from './constant/weather.constant';
 
 const App: React.FC = () => {
   const [city, setCity] = useState('melbourne');
-  const [units, setUnits] = useState('M');
+  const [units, setUnits] = useState(WEATHER_UNIT_NAME_MAPPER[0].id); // "M"
   const {loading, days} = useFetchWeather(city, units);
 
   return (

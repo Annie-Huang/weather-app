@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './SearchWeather.css';
-import {WEATHER_UNIT_SEARCH_ARRAY} from '../constant/weather.constant';
+import {WEATHER_UNIT_NAME_MAPPER} from '../constant/weather.constant';
 
 
 interface ISearchWeatherProp {
@@ -25,11 +25,11 @@ const SearchWeather: React.FC<ISearchWeatherProp> = ({city, setCity, units, setU
       <input type="text" className="form-control mb-2" id="city" name="city" aria-label="search city" value={searchedCity} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchedCity(e.target.value)}/>
       <button type='button' className="btn btn-primary" onClick={handleSubmitData}>Search</button>
 
-      {WEATHER_UNIT_SEARCH_ARRAY.map((item, index) =>
+      {WEATHER_UNIT_NAME_MAPPER.map((item, index) =>
         <div className="form-check mt-2" key={index}>
-          <input className="form-check-input" type="radio" name="weatherUnit" id="Celsius" onChange={() => setSearchedUnits(item[0])} checked={searchedUnits === item[0]}/>
-          <label className="form-check-label" htmlFor={item[1]}>
-            {item[1]}
+          <input className="form-check-input" type="radio" name="weatherUnit" id={item.name} onChange={() => setSearchedUnits(item.id)} checked={searchedUnits === item.id}/>
+          <label className="form-check-label" htmlFor={item.name}>
+            {item.name}
           </label>
         </div>
       )}
