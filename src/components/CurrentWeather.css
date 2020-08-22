@@ -30,8 +30,8 @@
   font-size: 50px;
 }
 
-
-@media screen and (max-width: 530px){
+/* ues the same value as the boostrap5 sm breakpoint so it will be consistent*/
+@media screen and (max-width: 576px){
   .wrapper {
     grid-template-columns: 1fr;
     grid-template-areas:

@@ -19,6 +19,8 @@ https://www.weatherbit.io/api/meta
 https://v5.getbootstrap.com/
 https://v5.getbootstrap.com/docs/5.0/components/card/
 https://v5.getbootstrap.com/docs/5.0/utilities/text/
+https://v5.getbootstrap.com/docs/5.0/layout/breakpoints/
+https://v5.getbootstrap.com/docs/5.0/utilities/flex/
 
 https://howtodoinjava.com/typescript/maps/
 
@@ -55,15 +57,9 @@ This app is to mirror the idea of useFetchJobs in C:\react\github-jobs-api-react
 
 Todo list:
 ===========
-- Boostrap 5 for layout.
 - Error for API call
 - Search city is not available.
-- Loading stage.
-- Grid for mobile and tablet view
 - Accessibility
-- switch between Imperial/Metric units
-- enter in a location name to look up
-
 
 - Unit test.
 - Coverage test.
@@ -72,5 +68,14 @@ Todo list:
 - Readme
 
 - check comment out stuff in each file and clean up (especially those in css file)
+
+Done:
+===============
+- Boostrap 5 for layout.
+- Loading stage.
+- Grid for mobile and tablet view
+- switch between Imperial/Metric units
+- enter in a location name to look up
+
 - see if you can use enum;
 - use boostrap breakpoints for mobile screen
