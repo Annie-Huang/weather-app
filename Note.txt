@@ -30,6 +30,9 @@ https://stackoverflow.com/questions/43064221/typescript-ts7006-parameter-xxx-imp
 https://stackoverflow.com/questions/56352702/is-there-a-way-to-both-destructure-a-function-parameter-and-keep-a-named-refere
 https://www.tutorialsteacher.com/typescript/typescript-interface
 https://fettblog.eu/typescript-react/components/
+
+https://github.com/axios/axios#cancellation
+https://medium.com/@anuhosad/debouncing-events-with-react-b8c405c33273
 =================================================================
 
 C:\tmp>npx create-react-app weather-app --template typescript
