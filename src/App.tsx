@@ -18,11 +18,11 @@ const App: React.FC = () => {
       {loading && <div className="spinner-wrap"><div className="spinner" /></div>}
 
       {!loading && error &&
-        <div className='text-center mt-5'>
-          <p>Something wrong with server connection, please try again laster or contact our support team at 1300 000 000</p>
-        </div>
+        <p className='text-center mt-5'>
+          There is no data available form your search, or our server is down. <br/>Please try again or contact our support team at 1300 000 000
+        </p>
       }
-      
+
       {!loading && !error &&
         <>
           <CurrentWeather {...days[0]} city={city} units={units}/>

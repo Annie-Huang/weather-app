@@ -38,7 +38,6 @@ function reducer(state: state, action: action): state {
   }
 }
 
-
 export default function useFetchWeather(city: string, units: string) {
   const [state, dispatch] = useReducer(reducer, {loading: true, days: [], error: null});
 
@@ -54,19 +53,11 @@ export default function useFetchWeather(city: string, units: string) {
         city,
         units,
       }
-
     }).then(res => {
-      console.log('7 days res=', res);
-      console.log('7 days res.data.data[0]=',  res.data.data);
-      // console.log('7 days res.data.data[0]=',  JSON.stringify(res.data.data));
       dispatch({type: ACTIONS.GET_DATA, payload: {days: convertAPIResponseToDayWeatherList(res.data.data)}})
-
-      // TODO: Need to handle no data....
-
     }).catch(e => {
       dispatch({type: ACTIONS.ERROR, payload: {error: e}})
     });
-
 
   }, [city, units])
 
