@@ -10,13 +10,20 @@ import {WEATHER_UNIT_NAME_MAPPER} from './constant/weather.constant';
 const App: React.FC = () => {
   const [city, setCity] = useState('melbourne');
   const [units, setUnits] = useState(WEATHER_UNIT_NAME_MAPPER[0].id); // "M"
-  const {loading, days} = useFetchWeather(city, units);
+  const {loading, days, error} = useFetchWeather(city, units);
 
   return (
     <div className='container' style={{maxWidth: '950px'}}>
       <SearchWeather city={city} setCity={setCity} units={units} setUnits={setUnits}/>
       {loading && <div className="spinner-wrap"><div className="spinner" /></div>}
-      {!loading &&
+
+      {!loading && error &&
+        <div className='text-center mt-5'>
+          <p>Something wrong with server connection, please try again laster or contact our support team at 1300 000 000</p>
+        </div>
+      }
+      
+      {!loading && !error &&
         <>
           <CurrentWeather {...days[0]} city={city} units={units}/>
           <div className='forecast-wrap'>
