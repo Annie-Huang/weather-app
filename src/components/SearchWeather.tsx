@@ -20,7 +20,7 @@ const SearchWeather: React.FC<ISearchWeatherProp> = ({city, setCity, units, setU
       <div className="d-flex justify-content-center">
         {WEATHER_UNIT_NAME_MAPPER.map((item, index) =>
           <div className="form-check mt-2 mr-4" key={index}>
-            <input className="form-check-input" type="radio" name="weatherUnit" id={item.name} onChange={() => setUnits(item.id)} checked={units === item.id}/>
+            <input className="form-check-input" type="radio" name="weather-unit" id={item.name} onChange={() => setUnits(item.id)} checked={units === item.id}/>
             <label className="form-check-label" htmlFor={item.name}>
               {item.name}
             </label>

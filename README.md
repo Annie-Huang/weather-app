@@ -17,7 +17,8 @@ Technology:
 - Enzyme
 
 Design:
-- all business logic is in useFetchWeather.ts, all the rest are pretty much functional components.
+- All business logic is in useFetchWeather.ts, all the rest are pretty much functional components.
+- Handle accessibility by using label for input; alt for image; form control for search submission, etc. 
 - Decide to use basic css for styling. More complex app would use sass.
 - Decide not to use date time library such as moment.js. So the package size can be small.
 - Create a loader through pure CSS animation, rather than using a image. So the package size can be small. 

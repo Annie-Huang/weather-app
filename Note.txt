@@ -38,6 +38,11 @@ https://fettblog.eu/typescript-react/components/
 Axio cancel:
 https://github.com/axios/axios#cancellation
 https://medium.com/@anuhosad/debouncing-events-with-react-b8c405c33273
+
+Accessibility
+https://www.w3.org/WAI/tutorials/forms/labels/
+https://www.w3.org/WAI/tutorials/forms/grouping/
+https://www.washington.edu/accessibility/checklist/images/
 =================================================================
 
 C:\tmp>npx create-react-app weather-app --template typescript
@@ -60,10 +65,7 @@ This app is to mirror the idea of useFetchJobs in C:\react\github-jobs-api-react
 
 Todo list:
 ===========
-- Error for API call
-- Search city is not available.
 - Accessibility
-
 - Unit test.
 - Coverage test.
 - Prettier
@@ -74,6 +76,8 @@ Todo list:
 
 Done:
 ===============
+- Error for API call            << resulting error throw in api
+- Search city is not available. << resulting error throw in api
 - Boostrap 5 for layout.
 - Loading stage.
 - Grid for mobile and tablet view
