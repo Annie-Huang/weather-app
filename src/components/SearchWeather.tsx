@@ -15,7 +15,7 @@ const SearchWeather: React.FC<ISearchWeatherProp> = ({city, setCity, units, setU
     <form className='my-3 d-flex flex-column justify-content-center'>
       <label htmlFor="city" className="form-label">Search Weather for your city</label>
       <input type="text" className="form-control mb-2" id="city" name="city" aria-label="search city" value={searchedCity} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchedCity(e.target.value)}/>
-      <button type='button' className="btn btn-primary" onClick={()=>setCity(searchedCity)}>Search</button>
+      <button className="btn btn-primary" onClick={(e: React.MouseEvent<HTMLButtonElement>) => {e.preventDefault();setCity(searchedCity);}}>Search</button>
 
       <div className="d-flex justify-content-center">
         {WEATHER_UNIT_NAME_MAPPER.map((item, index) =>
