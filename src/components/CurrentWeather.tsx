@@ -4,7 +4,7 @@ import {WEATHER_UNIT_NAME_MAPPER} from '../constant/weather.constant';
 import {getCalendarMonth, getWeekDay} from '../untils/weather.utils';
 
 
-interface ICurrentWeatherProp {
+export interface ICurrentWeatherProp {
   precipitation: string,
   humidity: string,
   wind: string,

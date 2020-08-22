@@ -53,6 +53,8 @@ https://jestjs.io/docs/en/snapshot-testing
 
 Enzyme:
 https://stackoverflow.com/questions/54419342/jest-enzyme-shallowwrapper-is-empty-when-creating-snapshot
+https://devhints.io/enzyme
+https://enzymejs.github.io/enzyme/
 =================================================================
 
 C:\tmp>npx create-react-app weather-app --template typescript
