@@ -22,7 +22,7 @@ const CurrentWeather: React.FC<ICurrentWeatherProp> = (props) => {
   const dateOfToday = new Date();
 
   return (
-    <div className='wrapper'>
+    <div className='current-weather-wrap'>
       <div className='summary text-center text-sm-left'>
         <h1 className="text-capitalize">{props.city}</h1>
         <div className="font-weight-bold text-secondary">
