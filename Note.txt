@@ -50,12 +50,17 @@ https://testing-library.com/docs/react-testing-library/api#render-result
 
 Jest:
 https://jestjs.io/docs/en/snapshot-testing
+https://stackoverflow.com/questions/28725955/how-do-i-test-a-single-file-using-jest
 
 Enzyme:
 https://stackoverflow.com/questions/54419342/jest-enzyme-shallowwrapper-is-empty-when-creating-snapshot
 https://devhints.io/enzyme
 https://enzymejs.github.io/enzyme/
-=================================================================
+https://github.com/enzymejs/enzyme/issues/1999
+https://stackoverflow.com/questions/52903643/enzyme-jest-how-to-test-if-mocked-function-has-been-called
+https://stackoverflow.com/questions/41732318/test-setting-text-value-with-react-and-enzyme
+
+==================================================================================================================
 
 C:\tmp>npx create-react-app weather-app --template typescript
 C:\tmp\weather-app>git remote add origin git@github.com:Annie-Huang/weather-app.git

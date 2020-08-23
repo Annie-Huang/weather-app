@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchWeather - snapshot 1`] = `
+<form
+  className="my-3 d-flex flex-column justify-content-center"
+>
+  <label
+    className="form-label"
+    htmlFor="city"
+  >
+    Search Weather for your city
+  </label>
+  <input
+    aria-label="search city"
+    className="form-control mb-2"
+    id="city"
+    name="city"
+    onChange={[Function]}
+    type="text"
+    value="cityStr"
+  />
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+  >
+    Search
+  </button>
+  <div
+    className="d-flex justify-content-center"
+  >
+    <div
+      className="form-check mt-2 mr-4"
+      key="0"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="Celsius"
+        name="weather-unit"
+        onChange={[Function]}
+        type="radio"
+      />
+      <label
+        className="form-check-label"
+        htmlFor="Celsius"
+      >
+        Celsius
+      </label>
+    </div>
+    <div
+      className="form-check mt-2 mr-4"
+      key="1"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="Fahrenheit"
+        name="weather-unit"
+        onChange={[Function]}
+        type="radio"
+      />
+      <label
+        className="form-check-label"
+        htmlFor="Fahrenheit"
+      >
+        Fahrenheit
+      </label>
+    </div>
+  </div>
+</form>
+`;

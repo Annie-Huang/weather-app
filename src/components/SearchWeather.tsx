@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {WEATHER_UNIT_NAME_MAPPER} from '../constant/weather.constant';
 
-interface ISearchWeatherProp {
+export interface ISearchWeatherProp {
   city: string;
   setCity: (searchedCity: string)=> void;
   units: string;
