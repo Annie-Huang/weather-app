@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CurrentWeather 1`] = `
+exports[`DailyForecast 1`] = `
 <div
   className="card text-center"
 >

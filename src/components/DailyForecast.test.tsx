@@ -3,7 +3,7 @@ import React from 'react';
 // @ts-ignore
 import { shallow } from 'enzyme';
 
-test('CurrentWeather', () => {
+test('DailyForecast', () => {
   const props: IDailyForecastProp = {
     weather_description: "weather_descriptionStr",
     day_of_week: "day_of_weekStr",
