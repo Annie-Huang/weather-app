@@ -7,6 +7,8 @@ Command:
 - npm run start: start the application
 - npm run test: run all unit tests of the application.
 - npm run build: build application.
+- npm run singletest: run a single test, put in a test file name in here.
+- npm run coverage: run a coverage test for the whole app.
 
 Technology:
 - React (hooks)
