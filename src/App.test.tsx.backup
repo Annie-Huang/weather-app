@@ -1,0 +1,133 @@
+import React from 'react';
+import App from './App';
+// @ts-ignore
+import { mount, shallow } from 'enzyme';
+import SearchWeather from './components/SearchWeather';
+import CurrentWeather from './components/CurrentWeather';
+import DailyForecast from './components/DailyForecast';
+import axios from 'axios';
+import { act } from 'react-dom/test-utils';
+import {resp} from './sampleResponse.ts';
+import { render } from "@testing-library/react";
+
+import mockAxios from 'axios';
+
+// test('renders learn react link', () => {
+//   const { getByText } = render(<App />);
+//   // const linkElement = getByText(/learn react/i);
+//   // expect(linkElement).toBeInTheDocument();
+//   expect(true).toBe(true);
+// });
+
+jest.mock('axios');
+
+function flushPromises() {
+  return new Promise(resolve => setImmediate(resolve));
+}
+
+
+/*it('fetches successfully data from an API', async () => {
+  await act(async () => {
+    axios.get.mockImplementationOnce(() => Promise.resolve(resp));
+
+    const { asFragment } = render(<App />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+});*/
+
+it('fetches successfully data from an API', async () => {
+  // axios.get.mockImplementationOnce(() => Promise.resolve(data));
+  // axios.get.mockImplementationOnce(() => Promise.resolve(resp));
+  // axios.get.mockImplementationOnce(() => Promise.reject(new Error('Network Error')),);
+
+  // mockAxios.post.mockImplementationOnce(() => Promise.resolve(data));
+
+  await act(async () => {
+    // ReactDOM.render(<TestComponent />, container);
+
+    axios.get.mockImplementationOnce(() => Promise.resolve(resp));
+
+    const wrapper = mount(<App />)
+
+    // axios.get.mockImplementationOnce(() => Promise.resolve(resp));
+
+    wrapper.update();
+    // wrapper.forceUpdate();
+    // wrapper.instance().forceUpdate();
+    expect(wrapper).toMatchSnapshot();
+    console.log('=========>', JSON.stringify(wrapper))
+    // expect(annie).toMatchSnapshot();
+    // expect(wrapper.find(CurrentWeather)).toHaveLength(1);
+
+
+  });
+  // const wrapper  = mount(<App />)
+  // await flushPromises();
+
+});
+
+
+
+/*
+// test('App', async() => {
+test('App', done => {
+  // act(() => {
+
+
+  const data = {
+    data: {
+      hits: [
+        {
+          objectID: '1',
+          title: 'a',
+        },
+        {
+          objectID: '2',
+          title: 'b',
+        },
+      ],
+    },
+  };
+
+  // axios.get.mockImplementationOnce(() => Promise.resolve(data));
+  // const promise = new Promise(...);
+  const promise = new Promise<any>((resolve, reject) =>
+    reject(new Error('Whoops!'))
+  );
+  axios.get = jest.fn(() => promise);
+
+  let wrapper: any;
+
+  // act(() => {
+  wrapper  = mount(<App />)
+  // expect(wrapper.find(SearchWeather)).toHaveLength(1);
+  // console.log('wrapper.find(CurrentWeather)=', wrapper.find(CurrentWeather));
+
+  // await flushPromises();
+  // });
+
+
+  promise.catch(() => {
+    setImmediate(() => {
+      // await act(async () => {
+
+        // wrapper.update();
+
+      // });
+
+      // expect(wrapper.find('li').length).toEqual(0);
+      // expect(wrapper.find('.error').length).toEqual(1);
+
+      // axios.get.mockClear();
+      done();
+    });
+  });
+
+
+  // wrapper.update();
+  // await expect(wrapper.find(CurrentWeather)).toHaveLength(1);
+  // await expect(wrapper.find(DailyForecast)).toHaveLength(7);
+
+});
+
+*/

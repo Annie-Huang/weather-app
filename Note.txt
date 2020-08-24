@@ -59,6 +59,11 @@ https://enzymejs.github.io/enzyme/
 https://github.com/enzymejs/enzyme/issues/1999
 https://stackoverflow.com/questions/52903643/enzyme-jest-how-to-test-if-mocked-function-has-been-called
 https://stackoverflow.com/questions/41732318/test-setting-text-value-with-react-and-enzyme
+https://github.com/enzymejs/enzyme/issues/346
+
+https://www.robinwieruch.de/axios-jest
+https://www.robinwieruch.de/react-testing-jest-enzyme
+https://reactjs.org/docs/test-utils.html#act
 
 ==================================================================================================================
 
@@ -92,16 +97,15 @@ Testing library:
 
 Todo list:
 ===========
-- Unit test.
-- Coverage test.
 - Prettier
 - Lint
-- Readme
 
 - check comment out stuff in each file and clean up (especially those in css file)
 
 Done:
 ===============
+- Unit test.
+- Coverage test.
 - Accessibility
 - Error for API call            << resulting error throw in api
 - Search city is not available. << resulting error throw in api
@@ -113,3 +117,4 @@ Done:
 
 - see if you can use enum;
 - use boostrap breakpoints for mobile screen
+- Readme
