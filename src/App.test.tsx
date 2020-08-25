@@ -1,11 +1,10 @@
 import React from 'react';
 import App from './App';
-// @ts-ignore
-import { mount} from 'enzyme';
+import { mount } from 'enzyme';
 import SearchWeather from './components/SearchWeather';
 import axios from 'axios';
 import { act } from 'react-dom/test-utils';
-import {resp} from './sampleResponse.ts';
+import { resp } from './sampleResponse.ts';
 
 jest.mock('axios');
 
@@ -14,7 +13,7 @@ it('fetches successfully data from an API', async () => {
     axios.get.mockImplementationOnce(() => Promise.resolve(resp));
     // axios.get.mockImplementationOnce(() => Promise.reject(new Error('Network Error')),);
 
-    const wrapper = mount(<App />)
+    const wrapper = mount(<App />);
 
     wrapper.update();
     // wrapper.forceUpdate();

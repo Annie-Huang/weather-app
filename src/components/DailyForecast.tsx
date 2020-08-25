@@ -21,14 +21,16 @@ export interface IDailyForecastProp {
   clouds: string;
 }
 
-const DailyForecast: React.FC<IDailyForecastProp> = (props) => (
-  <div className='card text-center'>
-    <h5 style={{marginBottom: 0}}>{props.day_of_week}</h5>
+const DailyForecast: React.FC<IDailyForecastProp> = props => (
+  <div className="card text-center">
+    <h5 style={{ marginBottom: 0 }}>{props.day_of_week}</h5>
     <img src={props.weather_icon} alt={props.weather_description} />
-    <div>{props.min_temperature}&#176;<span className='text-secondary'>{props.max_temperature}&#176;</span></div>
-    <div className='text-secondary'>Clouds: {props.clouds}</div>
+    <div>
+      {props.min_temperature}&#176;
+      <span className="text-secondary">{props.max_temperature}&#176;</span>
+    </div>
+    <div className="text-secondary">Clouds: {props.clouds}</div>
   </div>
 );
-
 
 export default DailyForecast;

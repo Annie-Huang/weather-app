@@ -1,5 +1,5 @@
-import {IDayWeather, IDayWeatherAPIResponse} from '../model/weather.model';
-import {MONTH, WEEKDAY} from '../constant/weather.constant';
+import { IDayWeather, IDayWeatherAPIResponse } from '../model/weather.model';
+import { MONTH, WEEKDAY } from '../constant/weather.constant';
 
 export const getWeekDay = (date: Date): string => WEEKDAY[date.getDay()];
 export const getCalendarMonth = (date: Date): string => MONTH[date.getMonth()];
@@ -18,8 +18,8 @@ export const convertAPIResponseToDayWeatherList = (apiResponses: IDayWeatherAPIR
     max_temperature: resp.max_temp,
     weather_icon: `/imgs/icons/${resp.weather.icon}.png`,
     clouds: `${resp.clouds}%`,
-  }))
+  }));
 
   daysWeather[0].day_of_week = 'Today';
   return daysWeather;
-}
+};
