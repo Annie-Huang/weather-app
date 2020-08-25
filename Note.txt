@@ -101,15 +101,14 @@ Testing library:
 
 Todo list:
 ===========
-- Prettier
-- Lint
-
 - check comment out stuff in each file and clean up (especially those in css file)
 
 Done:
 ===============
 - Unit test.
 - Coverage test.
+- Prettier
+- Lint
 - Accessibility
 - Error for API call            << resulting error throw in api
 - Search city is not available. << resulting error throw in api
