@@ -2,7 +2,14 @@ import { IDayWeather, IDayWeatherAPIResponse } from '../model/weather.model';
 import { MONTH, WEEKDAY } from '../constant/weather.constant';
 
 export const getWeekDay = (date: Date): string => WEEKDAY[date.getDay()];
-export const getCalendarMonth = (date: Date): string => MONTH[date.getMonth()];
+// export const getCalendarMonth = (date: Date): string => MONTH[date.getMonth()];
+
+export const displayDate = (date: Date): string => {
+  // The first param is the locale or language you want to use,
+  // or use undefined, which will take info base on user's browser and what default they set
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString
+  return date.toLocaleString(undefined, { weekday: 'long', day: 'numeric', month: 'long' });
+};
 
 const convertDateStrToWeekDay = (dateStr: string): string => getWeekDay(new Date(dateStr));
 

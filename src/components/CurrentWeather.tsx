@@ -1,7 +1,7 @@
 import React from 'react';
 import './CurrentWeather.css';
 import { WEATHER_UNIT_NAME_MAPPER } from '../constant/weather.constant';
-import { getCalendarMonth, getWeekDay } from '../untils/weather.utils';
+import { displayDate } from '../untils/weather.utils';
 
 export interface ICurrentWeatherProp {
   precipitation: string;
@@ -20,12 +20,14 @@ const CurrentWeather: React.FC<ICurrentWeatherProp> = props => {
   const unit = WEATHER_UNIT_NAME_MAPPER.find(item => item.id === props.units)?.shortName;
   const dateOfToday = new Date();
 
+  // {getWeekDay(dateOfToday)}, {getCalendarMonth(dateOfToday)} {dateOfToday.getDate()}
   return (
     <div className="current-weather-wrap">
       <div className="summary text-center text-sm-left">
         <h1 className="text-capitalize">{props.city}</h1>
         <div className="font-weight-bold text-secondary">
-          {getWeekDay(dateOfToday)}, {getCalendarMonth(dateOfToday)} {dateOfToday.getDate()} <br />
+          {displayDate(dateOfToday)}
+          <br />
           {props.weather_description}
         </div>
       </div>
